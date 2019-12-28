@@ -8,6 +8,8 @@ function App() {
     <div className="App">
       <UserInput> </UserInput>
       <UserOutput> </UserOutput>
+      <UserOutput> </UserOutput>
+      <UserOutput> </UserOutput>
     </div>
   );
 }
