@@ -6,10 +6,10 @@ import UserOutput from './UserOutput/UserOutput';
 function App() {
   return (
     <div className="App">
-      <UserInput> </UserInput>
-      <UserOutput> </UserOutput>
-      <UserOutput> </UserOutput>
-      <UserOutput> </UserOutput>
+      <UserInput /> 
+      <UserOutput username="ashley"/>
+      <UserOutput/> 
+      <UserOutput/> 
     </div>
   );
 }
