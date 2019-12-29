@@ -4,20 +4,21 @@ import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
 
 
-const inputHandler = () => {
- 
-}
-
-
-
 class App extends Component {
   state = {
     username: 'ashley'
   }
+
+  inputHandler = (event) => {
+    console.log("hey!");
+    this.setState({username: event.target.value});
+
+  }
+
   render(){
     return (
       <div className="App">
-        <UserInput /> 
+        <UserInput acceptUsername = {this.inputHandler}/> 
         <UserOutput username = {this.state.username}/>
         <UserOutput/> 
         <UserOutput/> 
