@@ -10,17 +10,15 @@ class App extends Component {
   }
 
   inputHandler = (event) => {
-    console.log("hey!");
     this.setState({username: event.target.value});
-
   }
 
   render(){
     return (
       <div className="App">
-        <UserInput acceptUsername = {this.inputHandler}/> 
+        <UserInput acceptUsername = {this.inputHandler} currentName = {this.state.username}/> 
         <UserOutput username = {this.state.username}/>
-        <UserOutput/> 
+        <UserOutput username= "Stephanie"/> 
         <UserOutput/> 
       </div>
     );
