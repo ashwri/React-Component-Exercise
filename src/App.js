@@ -16,7 +16,10 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <p> Please enter your username: </p>
+        <h4>Base Syntax Assignment</h4>
+        <p>This assignment utilises concepts such as states, binding and props. 
+          It also introduces styling in React.
+        </p> 
         <UserInput acceptUsername = {this.inputHandler} currentName = {this.state.username}/> 
         <UserOutput username = {this.state.username} type = "state"/>
         <UserOutput username= "Stephanie" type= "hardcoded username"/> 
