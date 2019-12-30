@@ -1,3 +1,7 @@
 .user-output{
     background-color: rgba(255, 140, 198, 0.226);
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 25%;
 }
